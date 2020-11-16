@@ -1,25 +1,47 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+// CSS
+import './App.css';
+// variables
+const firstBook = {
+  imgSrc:
+    'https://images-na.ssl-images-amazon.com/images/I/71c1LRLBTBL._AC_UL200_SR200,200_.jpg',
+  title: 'Dog Man',
+  author: 'Dav Pilkey',
+};
+const secondBook = {
+  imgSrc:
+    'https://images-na.ssl-images-amazon.com/images/I/91nSi4sI-SL._AC_UL200_SR200,200_.jpg',
+  title: '5.000 amazing things',
+  author: 'National Geographic Kids',
+};
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className='book-list'>
+      <Book
+        imgSrc={firstBook.imgSrc}
+        title={firstBook.title}
+        author={firstBook.author}
+      />
+      <Book
+        imgSrc={secondBook.imgSrc}
+        title={secondBook.title}
+        author={secondBook.author}
+      />
+    </section>
   );
-}
+};
+
+const Book = (props) => {
+  let { imgSrc, title, author } = props;
+  return (
+    <article className='book'>
+      <img src={imgSrc} alt='' />
+      <h1>{title}</h1>
+      <h4>{author}</h4>
+    </article>
+  );
+};
 
 export default App;
