@@ -1,0 +1,17 @@
+{
+  "book1": {
+    "imgSrc": "https://images-na.ssl-images-amazon.com/images/I/91uwocAMtSL._AC_UL200_SR200,200_.jpg",
+    "title": "A Promised Land",
+    "author": "Barack Obama"
+  },
+  "book2": {
+    "imgSrc": "https://images-na.ssl-images-amazon.com/images/I/71Ks%2B8mKq2L._AC_UL200_SR200,200_.jpg",
+    "title": "The Deep End (Diary of a Wimpy Kid Book 15)",
+    "author": "Jeff Kinney"
+  },
+  "book3": {
+    "imgSrc": "https://images-na.ssl-images-amazon.com/images/I/81Kc8OsbDxL._AC_UL200_SR200,200_.jpg",
+    "title": "Greenlights",
+    "author": "Matthew McConaughey"
+  }
+}

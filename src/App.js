@@ -1,4 +1,5 @@
 import React from 'react';
+import { book1, book2, book3 } from './BOOKS.json';
 
 // CSS
 import './App.css';
@@ -15,20 +16,12 @@ const secondBook = {
   title: '5.000 amazing things',
   author: 'National Geographic Kids',
 };
-
 const App = () => {
   return (
     <section className='book-list'>
-      <Book
-        imgSrc={firstBook.imgSrc}
-        title={firstBook.title}
-        author={firstBook.author}
-      />
-      <Book
-        imgSrc={secondBook.imgSrc}
-        title={secondBook.title}
-        author={secondBook.author}
-      />
+      <Book imgSrc={book1.imgSrc} title={book1.title} author={book1.author} />
+      <Book imgSrc={book2.imgSrc} title={book2.title} author={book2.author} />
+      <Book imgSrc={book3.imgSrc} title={book3.title} author={book3.author} />
     </section>
   );
 };
